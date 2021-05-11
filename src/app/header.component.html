@@ -1,13 +1,13 @@
 <header>
   <ul class="nav nav-pills">
-    <li role="presentation"><a href="#">Rezeptbuch</a></li>
-    <li role="presentation"><a href="#">Einkaufsliste</a></li>
+    <li role="presentation" routerLinkActive="active"><a [routerLink]="['/rezepte']">Rezeptbuch</a></li>
+    <li role="presentation" routerLinkActive="active"><a [routerLink]="['/einkaufsliste']">Einkaufsliste</a></li>
     <li>
       <!-- Example single danger button -->
       <div class="btn-group">
         <div class="dropdown open" appDropdown>
           <button id="dLabel" type="button" aria-haspopup="true" aria-expanded="false" class="btn btn-primary">
-            Text
+            Verwaltung
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
